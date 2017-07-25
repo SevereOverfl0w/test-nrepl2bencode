@@ -11,4 +11,4 @@ calling the Neovim function `Foo` with the result.
 Clojure has challenges, due to it's startup time. However, following the advice
 from https://github.com/kkinnear/zprint/blob/master/doc/filter.md[zprint
 filter] I was able to reduce the total startup time to 0.8s, and the benchmark
-took 1.8s.
+took 1.8s, using the bootstrap classpath strategy.
