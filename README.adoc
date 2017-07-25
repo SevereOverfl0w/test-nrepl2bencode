@@ -1,0 +1,14 @@
+= Nrepl to Neovim communicator
+
+Testing a way of communicating with both the nrepl & neovim via the bencode
+socket to neovim msgpack rpc.
+
+The benchmark is based on connecting to an nrepl, performing an evaluation, and
+calling the Neovim function `Foo` with the result.
+
+== Clojure
+
+Clojure has challenges, due to it's startup time. However, following the advice
+from https://github.com/kkinnear/zprint/blob/master/doc/filter.md[zprint
+filter] I was able to reduce the total startup time to 0.8s, and the benchmark
+took 1.8s.
